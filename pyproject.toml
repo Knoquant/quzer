@@ -1,0 +1,21 @@
+[project]
+name = "quzer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "AbdullaShafeeg",email = "109128015+AbdullaShafeeg@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "quzer", from = "src"}]
+
+[tool.poetry.scripts]
+quzer = "quzer.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
